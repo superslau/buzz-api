@@ -1,0 +1,15 @@
+# app/views/photos/new.html.erb
+
+<%= form_for(space, :html => {:multipart => true}) do |f| %>
+  <div class="field">
+    <%= f.label :notes %>
+    <%= f.text_field :notes %>
+  </div>
+  <div class="field">
+    <%= f.label :photo %>
+    <%= f.file_field :photo %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Upload" %>
+  </div>
+<% end %>
