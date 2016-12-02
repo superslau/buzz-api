@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  latitude: 1.5
+  longitude: 1.5
+  notes: MyText
+  rating: 1
+  address_line_one: MyString
+  address_line_two: MyString
+  postcode: MyString
+  city: MyString
+  locality: MyString
+  created_at: 2016-12-02 14:09:08
+  country_code: MyString
+
+two:
+  latitude: 1.5
+  longitude: 1.5
+  notes: MyText
+  rating: 1
+  address_line_one: MyString
+  address_line_two: MyString
+  postcode: MyString
+  city: MyString
+  locality: MyString
+  created_at: 2016-12-02 14:09:08
+  country_code: MyString
