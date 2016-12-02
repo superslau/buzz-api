@@ -5,9 +5,17 @@ class SpacesController < ApplicationController
     end
 
     if space.save
-      redirect_to space_path(space)
+      if request.xhr?
+        render json: space.to_json, status: created
+      else
+        redirect_to space_path(space)
+      end
     else
-      render action: "new", locals: { space: space }
+      if request.xhr?
+        render json: space.to_json, status: unprocessable_entity
+      else
+        render action: "new", locals: { space: space }
+      end
     end
   end
 
