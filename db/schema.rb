@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20161202140908) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "spaces", force: :cascade do |t|
     t.float    "latitude"
     t.float    "longitude"
