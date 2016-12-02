@@ -26,6 +26,15 @@ class SpacesController < ApplicationController
   end
 
   def show
+    space  = Space.find(params[:id])
+
+    render :show, locals: { space: space }
+  end
+
+  def photo
+    space  = Space.find(params[:id])
+
+    send_data(space.photo, type: 'image/jpeg', :filename => "#{ space.id }.jpg", :disposition => "inline")
   end
 
   private
