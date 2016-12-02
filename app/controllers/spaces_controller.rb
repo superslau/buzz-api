@@ -1,7 +1,7 @@
 class SpacesController < ApplicationController
   def create
     space = Space.new(space_params) do |s|
-      s.photo = params[:space][:photo].read
+      s.photo = params[:space][:photo].read if params[:space][:photo]
     end
 
     if space.save
