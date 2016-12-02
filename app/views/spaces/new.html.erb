@@ -2,6 +2,31 @@
 
 <%= form_for(space, :html => {:multipart => true}) do |f| %>
   <div class="field">
+    <%= f.label :latitude %>
+    <%= f.text_field :latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :longitude %>
+    <%= f.text_field :longitude %>
+  </div>
+  <div class="field">
+    <%= f.label :rating %>
+    <%= f.text_field :rating %>
+  </div>
+  <div class="field">
+    <%= f.label :address_line_one %>
+    <%= f.text_field :address_line_one %>
+  </div>
+  <div class="field">
+    <%= f.label :address_line_two %>
+    <%= f.text_field :address_line_two %>
+  </div>
+  <div class="field">
+    <%= f.label :postcode %>
+    <%= f.text_field :postcode %>
+  </div>
+
+  <div class="field">
     <%= f.label :notes %>
     <%= f.text_field :notes %>
   </div>
