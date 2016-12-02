@@ -48,3 +48,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'geocoder'
 gem 'pg'
+
+gem 'rack-cors', require: 'rack/cors'
